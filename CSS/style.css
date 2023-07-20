@@ -64,6 +64,11 @@ fieldset label {
   -webkit-text-fill-color: transparent;
 }
 
+.password i:last-child {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
 input {
   font-family: 'poppins', sans-serif;
   width: 100%;
@@ -115,11 +120,11 @@ input {
   }
 
     .username, .email, .password {
-      width: 200px;
+      width: 220px;
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 315px) {
   #form {
     width: 200px;
     padding: 20px;
@@ -129,6 +134,6 @@ input {
   }
 
     .username, .email, .password {
-      width: 160px;
+      width: 200px;
     }
 }
