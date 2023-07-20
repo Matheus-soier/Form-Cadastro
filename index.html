@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="https://kit.fontawesome.com/de6dc9fc6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="form">
+    <form action="index.html" method="get">
+      <fieldset>
+        <legend>Cadastrar</legend>
+        <label for="username">Nome
+          <div class="username">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" name="username" id="username" placeholder="Username" autofocus spellcheck="false"
+              autocapitalize="none" autocorrect="off" autocomplete="off" required>
+          </div>
+        </label>
+
+        <label for="email">Email
+          <div class="email">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="Email" autocapitalize="none" required>
+          </div>
+        </label>
+
+        <label for="password">Senha
+          <div class="password">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="password" id="password" placeholder="Senha" maxlength="8" spellcheck="false"
+              autocapitalize="none" autocorrect="off" required>
+          </div>
+        </label>
+        <div id="btn">
+          <button type="submit">Cadastrar</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>

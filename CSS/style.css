@@ -1,0 +1,134 @@
+/* Reset CSS */
+@import 'normalize.css';
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+  font-family: 'poppins', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(-45deg, #ffce51, #ff7253, #fd5754);
+}
+
+#form {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  color: #2b344d;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.169);
+  /* Animação de Entrada */
+  animation: iniciar 1.6s ease-out;
+  pointer-events: all;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.username,
+.email,
+.password {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  border: 2px solid #6f7e8a;
+  border-radius: 22px;
+  padding: 5px;
+  margin: 5px 0 20px 0;
+}
+
+fieldset label {
+  margin-left: 5px;
+}
+
+.username i,
+.email i,
+.password i {
+  margin-left: 5px;
+  padding: 5px;
+  /* Uso de Webkit em Icons */
+  background-image: -webkit-linear-gradient(-45deg, #ffce51, #ff7253, #fd5754);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+input {
+  font-family: 'poppins', sans-serif;
+  width: 100%;
+  height: 100%;
+  color: #2b344d;
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 5px;
+  /* Remove borda das inputs */
+  border: none;
+  outline: none;
+  z-index: -1;
+}
+
+#btn button {
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 22px;
+  background-image: linear-gradient(-45deg, #ffce51, #ff7253, #fd5754);
+  color: #fff;
+  cursor: pointer;
+}
+
+#btn button:hover {
+  background-image: linear-gradient(-45deg, #eec04c, #ec7054, #ee5a57);
+}
+
+@keyframes iniciar {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+  }
+  100% {
+    opacity: 100%;
+    pointer-events: all;
+  }
+}
+
+@media (max-width: 450px) {
+  #form {
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .username, .email, .password {
+      width: 200px;
+    }
+}
+
+@media (max-width: 340px) {
+  #form {
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .username, .email, .password {
+      width: 160px;
+    }
+}
